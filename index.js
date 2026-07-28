@@ -94,10 +94,10 @@ const SERVERS_JSON_PATH = "json/25_servers.json";
         
         existingServers = [...existingJP, ...existingOther];
 
-        // Now sort for display: JP first, then CA, then US. 
+        // Now sort for display: US first, then CA, then JP. 
         // For servers of the same country, we sort by speed descending.
         existingServers.sort((a, b) => {
-            const order = { 'JP': 1, 'CA': 2, 'US': 3 };
+            const order = { 'US': 1, 'CA': 2, 'JP': 3 };
             const orderA = order[a.countryshort] || 99;
             const orderB = order[b.countryshort] || 99;
             if (orderA !== orderB) {
