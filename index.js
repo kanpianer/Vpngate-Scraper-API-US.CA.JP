@@ -16,7 +16,7 @@ const generateReadme = (servers) => {
     servers.forEach((server, index) => {
         let speedInMbps = (server.speed / 10000000).toFixed(2); // Convert to Mbps and round to two decimal places
         let updateTime = getDate(server.updatedAt || Date.now());
-        content += `| [Download](https://raw.githubusercontent.com/kanpianer/Vpngate-Scraper-API-US.CA.JP/main/configs/${server.countryshort}_${String(index).padStart(2, '0')}_${server.ip}.ovpn) | ${server.countryshort} | ${speedInMbps}&nbsp;Mbps | ${server.hostname} | ${server.ip} | ${server.ping} | ${updateTime.replace(/ /g, '&nbsp;')} |\n`;
+        content += `| [Download](./configs/${server.countryshort}_${String(index).padStart(2, '0')}_${server.ip}.ovpn) | ${server.countryshort} | ${speedInMbps}&nbsp;Mbps | ${server.hostname} | ${server.ip} | ${server.ping} | ${updateTime.replace(/ /g, '&nbsp;')} |\n`;
     });
 
     content += `\n\n### Note: Please respect the terms of use for each VPN.\n\n`;
