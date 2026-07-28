@@ -44,6 +44,11 @@ if (!fs.existsSync('./json')) {
 
 const SERVERS_JSON_PATH = "json/25_servers.json";
 
+    if (!process.env.GITHUB_ACTIONS) {
+        console.log("Local environment detected, skipping data update to prevent conflicts.");
+        process.exit(0);
+    }
+
     getVpnList()
     .then(vpnList => {
         // Filter API list for JP, US, and CA
