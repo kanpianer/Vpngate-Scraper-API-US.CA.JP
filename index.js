@@ -42,7 +42,7 @@ if (!fs.existsSync('./json')) {
     fs.mkdirSync('./json');
 }
 
-const SERVERS_JSON_PATH = "json/25_servers.json";
+const SERVERS_JSON_PATH = "json/30_servers.json";
 
     if (!process.env.GITHUB_ACTIONS) {
         console.log("Local environment detected, skipping data update to prevent conflicts.");
@@ -69,7 +69,7 @@ const SERVERS_JSON_PATH = "json/25_servers.json";
         let existingIps = new Set(existingServers.map(s => s.ip));
         let newServers = apiServers.filter(s => !existingIps.has(s.ip));
 
-        // Update the 25 slots (12 for JP, 13 for US/CA)
+        // Update the 30 slots (10 for JP, 20 for US/CA)
         let existingJP = existingServers.filter(s => s.countryshort === 'JP');
         let existingOther = existingServers.filter(s => s.countryshort !== 'JP');
         let newJP = newServers.filter(s => s.countryshort === 'JP');
@@ -89,8 +89,8 @@ const SERVERS_JSON_PATH = "json/25_servers.json";
             return existingList;
         }
 
-        existingJP = updateList(existingJP, newJP, 12);
-        existingOther = updateList(existingOther, newOther, 13);
+        existingJP = updateList(existingJP, newJP, 10);
+        existingOther = updateList(existingOther, newOther, 20);
         
         existingServers = [...existingJP, ...existingOther];
 
@@ -106,8 +106,8 @@ const SERVERS_JSON_PATH = "json/25_servers.json";
             return b.speed - a.speed;
         });
 
-        // Ensure we strictly have at most 25 servers
-        existingServers = existingServers.slice(0, 25);
+        // Ensure we strictly have at most 30 servers
+        existingServers = existingServers.slice(0, 30);
 
         // Save state
         fs.writeFileSync(SERVERS_JSON_PATH, JSON.stringify(existingServers, null, 4), "utf-8");
