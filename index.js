@@ -21,7 +21,7 @@ const generateReadme = (servers) => {
     servers.forEach((server, index) => {
         let speedInMbps = (server.speed / 10000000).toFixed(2); // Convert to Mbps and round to two decimal places
         let updateTime = getDate(server.updatedAt || Date.now());
-        content += `| ${server.hostname} | ${server.ip} | ${server.ping} | ${speedInMbps} Mbps | ${server.countrylong} | ${updateTime} | [Download 📥](./configs/${server.countryshort}_${String(index).padStart(2, '0')}.ovpn) |\n`;
+        content += `| ${server.hostname} | ${server.ip} | ${server.ping} | ${speedInMbps} Mbps | ${server.countrylong} | ${updateTime} | [Download 📥](./configs/${server.countryshort}_${String(index).padStart(2, '0')}_${server.ip}.ovpn) |\n`;
     });
 
     content += `\n\n### Note: Please respect the terms of use for each VPN.\n\n`;
@@ -102,7 +102,7 @@ getVpnList()
         // Generate configs
         existingServers.forEach((server, index) => {
             const configData = server.openvpn_configdata_base64;
-            saveBase64ToFile(configData, `./configs/${server.countryshort}_${String(index).padStart(2, '0')}.ovpn`);
+            saveBase64ToFile(configData, `./configs/${server.countryshort}_${String(index).padStart(2, '0')}_${server.ip}.ovpn`);
         });
 
         // Generate README
