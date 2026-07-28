@@ -2,36 +2,29 @@
 
 This is an auto-generated list of VPNs retrieved from a specific source.
 
-<<<<<<< HEAD
-=======
-## Last Updated
-
-This list was last updated on: 2026-07-28 11:58:12 UTC.
-
-## Available Servers
-
-Below is the list of available VPN servers (JP, CA, and US only, max 25):
-
->>>>>>> 4dd72c1311478fe591a02a26a433020252c107d5
 | Hostname | IP Address | Ping | Speed | Country | Update Time | OpenVPN Config |
 |----------|------------|-------|-------|---------|-------------|----------------|
-| public-vpn-195 | 219.100.37.195 | 18 | 72.93 Mbps | Japan | 2026-07-28 11:58:12 UTC | [Download 📥](./configs/JP_00_219.100.37.195.ovpn) |
-| public-vpn-227 | 219.100.37.185 | 13 | 35.58 Mbps | Japan | 2026-07-28 11:58:12 UTC | [Download 📥](./configs/JP_01_219.100.37.185.ovpn) |
-| public-vpn-118 | 219.100.37.87 | 9 | 35.28 Mbps | Japan | 2026-07-28 11:58:12 UTC | [Download 📥](./configs/JP_02_219.100.37.87.ovpn) |
-| public-vpn-235 | 219.100.37.171 | 26 | 32.48 Mbps | Japan | 2026-07-28 11:58:12 UTC | [Download 📥](./configs/JP_03_219.100.37.171.ovpn) |
-| public-vpn-79 | 219.100.37.27 | 15 | 31.82 Mbps | Japan | 2026-07-28 11:58:12 UTC | [Download 📥](./configs/JP_04_219.100.37.27.ovpn) |
-| public-vpn-231 | 219.100.37.188 | 16 | 26.49 Mbps | Japan | 2026-07-28 11:58:12 UTC | [Download 📥](./configs/JP_05_219.100.37.188.ovpn) |
-| public-vpn-104 | 219.100.37.58 | 11 | 26.25 Mbps | Japan | 2026-07-28 11:58:12 UTC | [Download 📥](./configs/JP_06_219.100.37.58.ovpn) |
-| public-vpn-48 | 219.100.37.12 | 28 | 24.30 Mbps | Japan | 2026-07-28 11:58:12 UTC | [Download 📥](./configs/JP_07_219.100.37.12.ovpn) |
-| vpn673622597 | 60.121.223.189 | 6 | 23.58 Mbps | Japan | 2026-07-28 11:58:12 UTC | [Download 📥](./configs/JP_08_60.121.223.189.ovpn) |
-| public-vpn-216 | 219.100.37.218 | 14 | 18.72 Mbps | Japan | 2026-07-28 11:58:12 UTC | [Download 📥](./configs/JP_09_219.100.37.218.ovpn) |
-| vpn687361087 | 122.197.135.133 | 14 | 9.60 Mbps | Japan | 2026-07-28 11:58:12 UTC | [Download 📥](./configs/JP_10_122.197.135.133.ovpn) |
-| vpn598961916 | 210.157.192.96 | 25 | 3.30 Mbps | Japan | 2026-07-28 11:58:12 UTC | [Download 📥](./configs/JP_11_210.157.192.96.ovpn) |
-| vpn629407907 | 47.147.53.250 | 6 | 17.50 Mbps | United States | 2026-07-28 11:58:12 UTC | [Download 📥](./configs/US_12_47.147.53.250.ovpn) |
-| vpn104003570 | 67.60.134.125 | 24 | 9.02 Mbps | United States | 2026-07-28 11:54:47 UTC | [Download 📥](./configs/US_13_67.60.134.125.ovpn) |
-| vpn151297916 | 23.93.5.4 | 9 | 8.28 Mbps | United States | 2026-07-28 11:58:12 UTC | [Download 📥](./configs/US_14_23.93.5.4.ovpn) |
-| vpn100383739 | 128.211.254.156 | 6 | 3.36 Mbps | United States | 2026-07-28 11:07:31 UTC | [Download 📥](./configs/US_15_128.211.254.156.ovpn) |
-| vpn366212908 | 67.87.12.210 | 11 | 2.10 Mbps | United States | 2026-07-28 11:54:47 UTC | [Download 📥](./configs/US_16_67.87.12.210.ovpn) |
+| public-vpn-182 | 219.100.37.177 | 11 | 152.60 Mbps | Japan | 2026-07-28 12:17:14 UTC | [Download 📥](./configs/JP_00_219.100.37.177.ovpn) |
+| public-vpn-255 | 219.100.37.224 | 12 | 63.18 Mbps | Japan | 2026-07-28 12:17:14 UTC | [Download 📥](./configs/JP_01_219.100.37.224.ovpn) |
+| public-vpn-219 | 219.100.37.206 | 15 | 39.25 Mbps | Japan | 2026-07-28 12:17:14 UTC | [Download 📥](./configs/JP_02_219.100.37.206.ovpn) |
+| vpn443136775 | 116.91.131.186 | 3 | 38.99 Mbps | Japan | 2026-07-28 12:17:14 UTC | [Download 📥](./configs/JP_03_116.91.131.186.ovpn) |
+| public-vpn-258 | 219.100.37.190 | 9 | 31.78 Mbps | Japan | 2026-07-28 12:17:14 UTC | [Download 📥](./configs/JP_04_219.100.37.190.ovpn) |
+| public-vpn-121 | 219.100.37.88 | 8 | 27.04 Mbps | Japan | 2026-07-28 12:17:14 UTC | [Download 📥](./configs/JP_05_219.100.37.88.ovpn) |
+| public-vpn-234 | 219.100.37.172 | 26 | 27.00 Mbps | Japan | 2026-07-28 12:17:14 UTC | [Download 📥](./configs/JP_06_219.100.37.172.ovpn) |
+| public-vpn-165 | 219.100.37.127 | 15 | 26.45 Mbps | Japan | 2026-07-28 12:17:14 UTC | [Download 📥](./configs/JP_07_219.100.37.127.ovpn) |
+| public-vpn-153 | 219.100.37.109 | 21 | 25.93 Mbps | Japan | 2026-07-28 12:17:14 UTC | [Download 📥](./configs/JP_08_219.100.37.109.ovpn) |
+| public-vpn-233 | 219.100.37.173 | 16 | 24.93 Mbps | Japan | 2026-07-28 12:17:14 UTC | [Download 📥](./configs/JP_09_219.100.37.173.ovpn) |
+| public-vpn-197 | 219.100.37.211 | 26 | 14.35 Mbps | Japan | 2026-07-28 12:17:14 UTC | [Download 📥](./configs/JP_10_219.100.37.211.ovpn) |
+| public-vpn-192 | 219.100.37.209 | 18 | 12.80 Mbps | Japan | 2026-07-28 12:17:14 UTC | [Download 📥](./configs/JP_11_219.100.37.209.ovpn) |
+| vpn106558468 | 70.69.200.251 | 16 | 27.85 Mbps | Canada | 2026-07-28 12:17:14 UTC | [Download 📥](./configs/CA_12_70.69.200.251.ovpn) |
+| vpn320086889 | 184.147.62.159 | 2 | 12.62 Mbps | Canada | 2026-07-28 12:17:14 UTC | [Download 📥](./configs/CA_13_184.147.62.159.ovpn) |
+| vpn221030864 | 98.176.6.64 | 24 | 44.57 Mbps | United States | 2026-07-28 12:17:14 UTC | [Download 📥](./configs/US_14_98.176.6.64.ovpn) |
+| vpn295326293 | 18.230.65.11 | 1 | 21.13 Mbps | United States | 2026-07-28 12:17:14 UTC | [Download 📥](./configs/US_15_18.230.65.11.ovpn) |
+| vpn629407907 | 47.147.53.250 | 6 | 17.50 Mbps | United States | 2026-07-28 11:58:12 UTC | [Download 📥](./configs/US_16_47.147.53.250.ovpn) |
+| vpn104003570 | 67.60.134.125 | 24 | 9.02 Mbps | United States | 2026-07-28 11:54:47 UTC | [Download 📥](./configs/US_17_67.60.134.125.ovpn) |
+| vpn151297916 | 23.93.5.4 | 9 | 8.28 Mbps | United States | 2026-07-28 11:58:12 UTC | [Download 📥](./configs/US_18_23.93.5.4.ovpn) |
+| vpn100383739 | 128.211.254.156 | 6 | 3.36 Mbps | United States | 2026-07-28 11:07:31 UTC | [Download 📥](./configs/US_19_128.211.254.156.ovpn) |
+| vpn366212908 | 67.87.12.210 | 11 | 2.10 Mbps | United States | 2026-07-28 11:54:47 UTC | [Download 📥](./configs/US_20_67.87.12.210.ovpn) |
 
 
 ### Note: Please respect the terms of use for each VPN.
