@@ -11,8 +11,8 @@ const generateReadme = (servers) => {
     content += `This is an auto-generated list of VPNs retrieved from a specific source.\n\n`;
 
 
-    content += "| Hostname | IP Address | Ping | Speed | Country | Update Time | OpenVPN Config |\n";
-    content += "|----------|------------|-------|-------|---------|-------------|----------------|\n";
+    content += "| Hostname | IP Address | Ping | Speed | CC | update | OVPN Config |\n";
+    content += "|----------|------------|-------|-------|----|--------|-------------|\n";
     servers.forEach((server, index) => {
         let speedInMbps = (server.speed / 10000000).toFixed(2); // Convert to Mbps and round to two decimal places
         let updateTime = getDate(server.updatedAt || Date.now());
@@ -27,7 +27,8 @@ const generateReadme = (servers) => {
 }
 
 const getDate = (unix) => {
-    return `${new Date(unix).toISOString().replace(/T/, ' ').replace(/\..+/, '')} UTC`;
+    const iso = new Date(unix).toISOString();
+    return `${iso.substring(5, 10)} ${iso.substring(11, 16)} UTC`;
 }
 
 // Ensure clean configs directory
