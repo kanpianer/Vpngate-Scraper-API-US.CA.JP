@@ -14,7 +14,7 @@ const generateReadme = (servers) => {
     content += `This list was last updated on: ${getDate(Date.now())}.\n\n`;
     
     content += `## Available Servers\n\n`;
-    content += `Below is the list of available VPN servers (US and CA only, max 20):\n\n`;
+    content += `Below is the list of available VPN servers (JP, CA, and US only, max 25):\n\n`;
 
     content += "| Hostname | IP Address | Ping | Speed | Country | Update Time | OpenVPN Config |\n";
     content += "|----------|------------|-------|-------|---------|-------------|----------------|\n";
@@ -47,12 +47,12 @@ if (!fs.existsSync('./json')) {
     fs.mkdirSync('./json');
 }
 
-const SERVERS_JSON_PATH = "json/20_servers.json";
+const SERVERS_JSON_PATH = "json/25_servers.json";
 
-getVpnList()
+    getVpnList()
     .then(vpnList => {
-        // Filter API list for US and CA
-        let apiServers = vpnList.servers.filter(s => s.countryshort === 'US' || s.countryshort === 'CA');
+        // Filter API list for JP, US, and CA
+        let apiServers = vpnList.servers.filter(s => s.countryshort === 'JP' || s.countryshort === 'US' || s.countryshort === 'CA');
         
         // Read existing servers
         let existingServers = [];
@@ -69,32 +69,45 @@ getVpnList()
         let existingIps = new Set(existingServers.map(s => s.ip));
         let newServers = apiServers.filter(s => !existingIps.has(s.ip));
 
-        // Update the 20 slots
-        // Sort existing by updatedAt ascending (oldest first)
-        existingServers.sort((a, b) => (a.updatedAt || 0) - (b.updatedAt || 0));
+        // Update the 25 slots (12 for JP, 13 for US/CA)
+        let existingJP = existingServers.filter(s => s.countryshort === 'JP');
+        let existingOther = existingServers.filter(s => s.countryshort !== 'JP');
+        let newJP = newServers.filter(s => s.countryshort === 'JP');
+        let newOther = newServers.filter(s => s.countryshort !== 'JP');
 
-        for (let newS of newServers) {
-            newS.updatedAt = Date.now();
-            if (existingServers.length < 20) {
-                existingServers.push(newS);
-            } else {
-                // Replace the oldest one
-                existingServers[0] = newS;
-                // Re-sort so the new oldest is at index 0
-                existingServers.sort((a, b) => (a.updatedAt || 0) - (b.updatedAt || 0));
+        const updateList = (existingList, newList, maxCount) => {
+            existingList.sort((a, b) => (a.updatedAt || 0) - (b.updatedAt || 0));
+            for (let newS of newList) {
+                newS.updatedAt = Date.now();
+                if (existingList.length < maxCount) {
+                    existingList.push(newS);
+                } else {
+                    existingList[0] = newS;
+                    existingList.sort((a, b) => (a.updatedAt || 0) - (b.updatedAt || 0));
+                }
             }
+            return existingList;
         }
 
-        // Now sort for display: CA first, then US. 
+        existingJP = updateList(existingJP, newJP, 12);
+        existingOther = updateList(existingOther, newOther, 13);
+        
+        existingServers = [...existingJP, ...existingOther];
+
+        // Now sort for display: JP first, then CA, then US. 
         // For servers of the same country, we sort by speed descending.
         existingServers.sort((a, b) => {
-            if (a.countryshort === 'CA' && b.countryshort !== 'CA') return -1;
-            if (a.countryshort !== 'CA' && b.countryshort === 'CA') return 1;
+            const order = { 'JP': 1, 'CA': 2, 'US': 3 };
+            const orderA = order[a.countryshort] || 99;
+            const orderB = order[b.countryshort] || 99;
+            if (orderA !== orderB) {
+                return orderA - orderB;
+            }
             return b.speed - a.speed;
         });
 
-        // Ensure we strictly have at most 20 servers
-        existingServers = existingServers.slice(0, 20);
+        // Ensure we strictly have at most 25 servers
+        existingServers = existingServers.slice(0, 25);
 
         // Save state
         fs.writeFileSync(SERVERS_JSON_PATH, JSON.stringify(existingServers, null, 4), "utf-8");
