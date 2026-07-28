@@ -4,18 +4,19 @@ This is an auto-generated list of VPNs retrieved from a specific source.
 
 | Config | CC | Speed | Hostname | IP&nbsp;Address | Ping | update |
 |-------------|----|-------|----------|------------|-------|--------|
-| [Download](https://raw.githubusercontent.com/kanpianer/Vpngate-Scraper-API-US.CA.JP/main/configs/US_00_47.25.225.222.ovpn) | US | 16.72&nbsp;Mbps | vpn680288952 | 47.25.225.222 | 20 | 07-28&nbsp;14:10&nbsp;UTC |
-| [Download](https://raw.githubusercontent.com/kanpianer/Vpngate-Scraper-API-US.CA.JP/main/configs/CA_01_205.206.133.162.ovpn) | CA | 29.90&nbsp;Mbps | vpn299071126 | 205.206.133.162 | 24 | 07-28&nbsp;14:10&nbsp;UTC |
-| [Download](https://raw.githubusercontent.com/kanpianer/Vpngate-Scraper-API-US.CA.JP/main/configs/JP_02_119.231.18.151.ovpn) | JP | 91.12&nbsp;Mbps | vpn898575276 | 119.231.18.151 | 4 | 07-28&nbsp;14:10&nbsp;UTC |
-| [Download](https://raw.githubusercontent.com/kanpianer/Vpngate-Scraper-API-US.CA.JP/main/configs/JP_03_219.100.37.224.ovpn) | JP | 61.34&nbsp;Mbps | public-vpn-255 | 219.100.37.224 | 15 | 07-28&nbsp;14:10&nbsp;UTC |
-| [Download](https://raw.githubusercontent.com/kanpianer/Vpngate-Scraper-API-US.CA.JP/main/configs/JP_04_126.163.99.21.ovpn) | JP | 51.81&nbsp;Mbps | vpn401546822 | 126.163.99.21 | 16 | 07-28&nbsp;14:10&nbsp;UTC |
-| [Download](https://raw.githubusercontent.com/kanpianer/Vpngate-Scraper-API-US.CA.JP/main/configs/JP_05_118.19.6.56.ovpn) | JP | 40.55&nbsp;Mbps | vpn719979686 | 118.19.6.56 | 5 | 07-28&nbsp;14:10&nbsp;UTC |
-| [Download](https://raw.githubusercontent.com/kanpianer/Vpngate-Scraper-API-US.CA.JP/main/configs/JP_06_153.132.67.172.ovpn) | JP | 36.45&nbsp;Mbps | vpn782394847 | 153.132.67.172 | 4 | 07-28&nbsp;14:10&nbsp;UTC |
-| [Download](https://raw.githubusercontent.com/kanpianer/Vpngate-Scraper-API-US.CA.JP/main/configs/JP_07_110.163.147.10.ovpn) | JP | 28.27&nbsp;Mbps | n26 | 110.163.147.10 | 8 | 07-28&nbsp;14:10&nbsp;UTC |
-| [Download](https://raw.githubusercontent.com/kanpianer/Vpngate-Scraper-API-US.CA.JP/main/configs/JP_08_219.100.37.64.ovpn) | JP | 21.37&nbsp;Mbps | public-vpn-131 | 219.100.37.64 | 8 | 07-28&nbsp;14:10&nbsp;UTC |
-| [Download](https://raw.githubusercontent.com/kanpianer/Vpngate-Scraper-API-US.CA.JP/main/configs/JP_09_219.100.37.105.ovpn) | JP | 20.43&nbsp;Mbps | public-vpn-139 | 219.100.37.105 | 10 | 07-28&nbsp;14:10&nbsp;UTC |
-| [Download](https://raw.githubusercontent.com/kanpianer/Vpngate-Scraper-API-US.CA.JP/main/configs/JP_10_210.198.250.157.ovpn) | JP | 5.82&nbsp;Mbps | vpn250920860 | 210.198.250.157 | 20 | 07-28&nbsp;14:10&nbsp;UTC |
-| [Download](https://raw.githubusercontent.com/kanpianer/Vpngate-Scraper-API-US.CA.JP/main/configs/JP_11_116.12.3.20.ovpn) | JP | 3.15&nbsp;Mbps | vpn858126279 | 116.12.3.20 | 9 | 07-28&nbsp;14:10&nbsp;UTC |
+| [Download](https://raw.githubusercontent.com/kanpianer/Vpngate-Scraper-API-US.CA.JP/main/configs/US_00_142.56.3.54.ovpn) | US | 30.73&nbsp;Mbps | vpn718892088 | 142.56.3.54 | 17 | 07-28&nbsp;14:11&nbsp;UTC |
+| [Download](https://raw.githubusercontent.com/kanpianer/Vpngate-Scraper-API-US.CA.JP/main/configs/US_01_47.25.225.222.ovpn) | US | 16.72&nbsp;Mbps | vpn680288952 | 47.25.225.222 | 20 | 07-28&nbsp;14:10&nbsp;UTC |
+| [Download](https://raw.githubusercontent.com/kanpianer/Vpngate-Scraper-API-US.CA.JP/main/configs/CA_02_205.206.133.162.ovpn) | CA | 29.90&nbsp;Mbps | vpn299071126 | 205.206.133.162 | 24 | 07-28&nbsp;14:10&nbsp;UTC |
+| [Download](https://raw.githubusercontent.com/kanpianer/Vpngate-Scraper-API-US.CA.JP/main/configs/JP_03_131.147.41.6.ovpn) | JP | 93.61&nbsp;Mbps | vpn585450930 | 131.147.41.6 | 6 | 07-28&nbsp;14:11&nbsp;UTC |
+| [Download](https://raw.githubusercontent.com/kanpianer/Vpngate-Scraper-API-US.CA.JP/main/configs/JP_04_219.100.37.161.ovpn) | JP | 65.14&nbsp;Mbps | public-vpn-183 | 219.100.37.161 | 19 | 07-28&nbsp;14:11&nbsp;UTC |
+| [Download](https://raw.githubusercontent.com/kanpianer/Vpngate-Scraper-API-US.CA.JP/main/configs/JP_05_219.100.37.116.ovpn) | JP | 47.37&nbsp;Mbps | public-vpn-137 | 219.100.37.116 | 29 | 07-28&nbsp;14:11&nbsp;UTC |
+| [Download](https://raw.githubusercontent.com/kanpianer/Vpngate-Scraper-API-US.CA.JP/main/configs/JP_06_219.100.37.102.ovpn) | JP | 41.37&nbsp;Mbps | public-vpn-124 | 219.100.37.102 | 11 | 07-28&nbsp;14:11&nbsp;UTC |
+| [Download](https://raw.githubusercontent.com/kanpianer/Vpngate-Scraper-API-US.CA.JP/main/configs/JP_07_219.100.37.94.ovpn) | JP | 24.74&nbsp;Mbps | public-vpn-146 | 219.100.37.94 | 14 | 07-28&nbsp;14:11&nbsp;UTC |
+| [Download](https://raw.githubusercontent.com/kanpianer/Vpngate-Scraper-API-US.CA.JP/main/configs/JP_08_219.100.37.91.ovpn) | JP | 21.06&nbsp;Mbps | public-vpn-133 | 219.100.37.91 | 19 | 07-28&nbsp;14:11&nbsp;UTC |
+| [Download](https://raw.githubusercontent.com/kanpianer/Vpngate-Scraper-API-US.CA.JP/main/configs/JP_09_219.100.37.59.ovpn) | JP | 19.72&nbsp;Mbps | public-vpn-111 | 219.100.37.59 | 15 | 07-28&nbsp;14:11&nbsp;UTC |
+| [Download](https://raw.githubusercontent.com/kanpianer/Vpngate-Scraper-API-US.CA.JP/main/configs/JP_10_219.100.37.29.ovpn) | JP | 18.23&nbsp;Mbps | public-vpn-84 | 219.100.37.29 | 16 | 07-28&nbsp;14:11&nbsp;UTC |
+| [Download](https://raw.githubusercontent.com/kanpianer/Vpngate-Scraper-API-US.CA.JP/main/configs/JP_11_219.100.37.221.ovpn) | JP | 17.71&nbsp;Mbps | public-vpn-220 | 219.100.37.221 | 15 | 07-28&nbsp;14:11&nbsp;UTC |
+| [Download](https://raw.githubusercontent.com/kanpianer/Vpngate-Scraper-API-US.CA.JP/main/configs/JP_12_219.100.37.128.ovpn) | JP | 17.48&nbsp;Mbps | public-vpn-164 | 219.100.37.128 | 12 | 07-28&nbsp;14:11&nbsp;UTC |
 
 
 ### Note: Please respect the terms of use for each VPN.
