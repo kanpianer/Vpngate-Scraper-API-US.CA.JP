@@ -11,12 +11,12 @@ const generateReadme = (servers) => {
     content += `This is an auto-generated list of VPNs retrieved from a specific source.\n\n`;
 
 
-    content += "| OVPN Config | CC | Speed | Hostname | IP Address | Ping | update |\n";
+    content += "| OVPN&nbsp;Config | CC | Speed | Hostname | IP&nbsp;Address | Ping | update |\n";
     content += "|-------------|----|-------|----------|------------|-------|--------|\n";
     servers.forEach((server, index) => {
         let speedInMbps = (server.speed / 10000000).toFixed(2); // Convert to Mbps and round to two decimal places
         let updateTime = getDate(server.updatedAt || Date.now());
-        content += `| [Download 📥](./configs/${server.countryshort}_${String(index).padStart(2, '0')}_${server.ip}.ovpn) | ${server.countryshort} | ${speedInMbps} Mbps | ${server.hostname} | ${server.ip} | ${server.ping} | ${updateTime} |\n`;
+        content += `| [Download&nbsp;📥](./configs/${server.countryshort}_${String(index).padStart(2, '0')}_${server.ip}.ovpn) | ${server.countryshort} | ${speedInMbps}&nbsp;Mbps | ${server.hostname} | ${server.ip} | ${server.ping} | ${updateTime.replace(/ /g, '&nbsp;')} |\n`;
     });
 
     content += `\n\n### Note: Please respect the terms of use for each VPN.\n\n`;
