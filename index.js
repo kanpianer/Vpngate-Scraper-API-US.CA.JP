@@ -6,7 +6,7 @@ const saveBase64ToFile = (base64Data, filename) => {
     fs.writeFileSync(filename, buffer);
 };
 
-const generateReadme = (vpnList) => {
+const generateReadme = (servers) => {
     let content = `# VPN List\n\n`;
     content += `This is an auto-generated list of VPNs retrieved from a specific source.\n\n`;
     
@@ -14,13 +14,14 @@ const generateReadme = (vpnList) => {
     content += `This list was last updated on: ${getDate(Date.now())}.\n\n`;
     
     content += `## Available Servers\n\n`;
-    content += `Below is the list of available VPN servers:\n\n`;
+    content += `Below is the list of available VPN servers (US and CA only, max 20):\n\n`;
 
-    content += "| Hostname | IP Address | Ping | Speed | Country | OpenVPN Config |\n";
-    content += "|----------|------------|-------|-------|---------|----------------|\n";
-    vpnList.servers.forEach((server, index) => {
+    content += "| Hostname | IP Address | Ping | Speed | Country | Update Time | OpenVPN Config |\n";
+    content += "|----------|------------|-------|-------|---------|-------------|----------------|\n";
+    servers.forEach((server, index) => {
         let speedInMbps = (server.speed / 10000000).toFixed(2); // Convert to Mbps and round to two decimal places
-        content += `| ${server.hostname} | ${server.ip} | ${server.ping} | ${speedInMbps} Mbps | ${server.countrylong} | [Download 📥](./configs/server_${index}_${server.countryshort}.ovpn) |\n`;
+        let updateTime = getDate(server.updatedAt || Date.now());
+        content += `| ${server.hostname} | ${server.ip} | ${server.ping} | ${speedInMbps} Mbps | ${server.countrylong} | ${updateTime} | [Download 📥](./configs/server_${index}_${server.countryshort}.ovpn) |\n`;
     });
 
     content += `\n\n### Note: Please respect the terms of use for each VPN.\n\n`;
@@ -31,31 +32,81 @@ const generateReadme = (vpnList) => {
     fs.writeFileSync('README.md', content);
 }
 
-
 const getDate = (unix) => {
-    return `${new Date(unix).toUTCString()}`;
+    return `${new Date(unix).toISOString().replace(/T/, ' ').replace(/\..+/, '')} UTC`;
 }
 
-// Make sure the configs directory exists
-if (!fs.existsSync('./configs')) {
-    fs.mkdirSync('./configs');
+// Ensure clean configs directory
+if (fs.existsSync('./configs')) {
+    fs.rmSync('./configs', { recursive: true, force: true });
 }
+fs.mkdirSync('./configs');
+
+// Ensure json directory exists
+if (!fs.existsSync('./json')) {
+    fs.mkdirSync('./json');
+}
+
+const SERVERS_JSON_PATH = "json/20_servers.json";
 
 getVpnList()
     .then(vpnList => {
-        servers = vpnList.servers;
-        countries = vpnList.countries;
-        lastUpdated = Date.now();
+        // Filter API list for US and CA
+        let apiServers = vpnList.servers.filter(s => s.countryshort === 'US' || s.countryshort === 'CA');
+        
+        // Read existing servers
+        let existingServers = [];
+        if (fs.existsSync(SERVERS_JSON_PATH)) {
+            try {
+                existingServers = JSON.parse(fs.readFileSync(SERVERS_JSON_PATH, 'utf-8'));
+            } catch(e) {
+                console.error("Error reading existing servers json:", e);
+                existingServers = [];
+            }
+        }
 
-        fs.writeFileSync("json/data.json",JSON.stringify([vpnList,lastUpdated], null, 4),"utf-8")
-        // Save the configs and update the readme
-        vpnList.servers.forEach((server, index) => {
-            const configData = server.openvpn_configdata_base64;
-            saveBase64ToFile(configData, `./configs/server_${index}_${server.countryshort}.ovpn`);
+        // Identify new servers from API
+        let existingIps = new Set(existingServers.map(s => s.ip));
+        let newServers = apiServers.filter(s => !existingIps.has(s.ip));
 
+        // Update the 20 slots
+        // Sort existing by updatedAt ascending (oldest first)
+        existingServers.sort((a, b) => (a.updatedAt || 0) - (b.updatedAt || 0));
+
+        for (let newS of newServers) {
+            newS.updatedAt = Date.now();
+            if (existingServers.length < 20) {
+                existingServers.push(newS);
+            } else {
+                // Replace the oldest one
+                existingServers[0] = newS;
+                // Re-sort so the new oldest is at index 0
+                existingServers.sort((a, b) => (a.updatedAt || 0) - (b.updatedAt || 0));
+            }
+        }
+
+        // Now sort for display: CA first, then US. 
+        // For servers of the same country, we sort by speed descending.
+        existingServers.sort((a, b) => {
+            if (a.countryshort === 'CA' && b.countryshort !== 'CA') return -1;
+            if (a.countryshort !== 'CA' && b.countryshort === 'CA') return 1;
+            return b.speed - a.speed;
         });
 
-        generateReadme(vpnList);
+        // Ensure we strictly have at most 20 servers
+        existingServers = existingServers.slice(0, 20);
+
+        // Save state
+        fs.writeFileSync(SERVERS_JSON_PATH, JSON.stringify(existingServers, null, 4), "utf-8");
+
+        // Generate configs
+        existingServers.forEach((server, index) => {
+            const configData = server.openvpn_configdata_base64;
+            saveBase64ToFile(configData, `./configs/server_${index}_${server.countryshort}.ovpn`);
+        });
+
+        // Generate README
+        generateReadme(existingServers);
     })
     .catch(err => {
         console.log(err);
