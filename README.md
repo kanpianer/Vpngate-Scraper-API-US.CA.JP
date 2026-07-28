@@ -2,14 +2,6 @@
 
 This is an auto-generated list of VPNs retrieved from a specific source.
 
-## Last Updated
-
-This list was last updated on: 2026-07-28 11:54:47 UTC.
-
-## Available Servers
-
-Below is the list of available VPN servers (JP, CA, and US only, max 25):
-
 | Hostname | IP Address | Ping | Speed | Country | Update Time | OpenVPN Config |
 |----------|------------|-------|-------|---------|-------------|----------------|
 | public-vpn-52 | 219.100.37.16 | 10 | 49.74 Mbps | Japan | 2026-07-28 11:54:47 UTC | [Download 📥](./configs/JP_00_219.100.37.16.ovpn) |

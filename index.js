@@ -9,12 +9,7 @@ const saveBase64ToFile = (base64Data, filename) => {
 const generateReadme = (servers) => {
     let content = `# VPN List\n\n`;
     content += `This is an auto-generated list of VPNs retrieved from a specific source.\n\n`;
-    
-    content += `## Last Updated\n\n`;
-    content += `This list was last updated on: ${getDate(Date.now())}.\n\n`;
-    
-    content += `## Available Servers\n\n`;
-    content += `Below is the list of available VPN servers (JP, CA, and US only, max 25):\n\n`;
+
 
     content += "| Hostname | IP Address | Ping | Speed | Country | Update Time | OpenVPN Config |\n";
     content += "|----------|------------|-------|-------|---------|-------------|----------------|\n";
