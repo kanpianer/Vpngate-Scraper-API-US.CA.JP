@@ -18,12 +18,7 @@ const generateReadme = (servers) => {
         let speedInMbps = (server.speed / 10000000).toFixed(2); // Convert to Mbps and round to two decimal places
         let updateTime = getDate(server.updatedAt || Date.now());
         let fileName = `${server.countryshort}_${String(index).padStart(2, '0')}_${server.ip}.ovpn`;
-        let rawUrl = `https://raw.githubusercontent.com/kanpianer/Vpngate-Scraper-API-US.CA.JP/main/configs/${fileName}`;
-        // OpenVPN Connect app does not support importing raw .ovpn files via openvpn:// scheme.
-        // Instead, we use GitHub's /raw/ endpoint to force a file download on mobile,
-        // which triggers the OS prompt to "Open in OpenVPN".
-        let importUrl = `https://github.com/kanpianer/Vpngate-Scraper-API-US.CA.JP/raw/main/configs/${fileName}`;
-        let downloadLinks = `[Download](./configs/${fileName})&nbsp;[📥](${importUrl})`;
+        let downloadLinks = `[Download](./configs/${fileName})`;
         let hostname = server.hostname ? server.hostname.replace(/ /g, '&nbsp;').replace(/-/g, '&#8209;') : '';
         let updateNoWrap = updateTime.replace(/ /g, '&nbsp;').replace(/-/g, '&#8209;');
         content += `| ${downloadLinks} | ${server.countryshort} | ${speedInMbps}&nbsp;Mbps | ${hostname} | ${server.ip} | ${server.ping} | ${updateNoWrap} |\n`;
