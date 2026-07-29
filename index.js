@@ -22,7 +22,8 @@ const generateReadme = (servers) => {
         let importUrl = `openvpn://import-profile?url=${encodeURIComponent(rawUrl)}`;
         let downloadLinks = `[Download](./configs/${fileName})&nbsp;[📥](${importUrl})`;
         let hostname = server.hostname ? server.hostname.replace(/ /g, '&nbsp;').replace(/-/g, '&#8209;') : '';
-        content += `| ${downloadLinks} | ${server.countryshort} | ${speedInMbps}&nbsp;Mbps | ${hostname} | ${server.ip} | ${server.ping} | ${updateTime.replace(/ /g, '&nbsp;')} |\n`;
+        let updateNoWrap = updateTime.replace(/ /g, '&nbsp;').replace(/-/g, '&#8209;');
+        content += `| ${downloadLinks} | ${server.countryshort} | ${speedInMbps}&nbsp;Mbps | ${hostname} | ${server.ip} | ${server.ping} | ${updateNoWrap} |\n`;
     });
 
     content += `\n\n### Note: Please respect the terms of use for each VPN.\n\n`;
