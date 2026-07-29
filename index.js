@@ -32,8 +32,9 @@ const generateReadme = (servers) => {
 }
 
 const getDate = (unix) => {
-    const iso = new Date(unix).toISOString();
-    return `${iso.substring(5, 10)} ${iso.substring(11, 16)} UTC`;
+    // Convert to Beijing Time (UTC+8)
+    const beijingTime = new Date(unix + 8 * 60 * 60 * 1000).toISOString();
+    return `${beijingTime.substring(5, 10)} ${beijingTime.substring(11, 16)} CST`;
 }
 
 // Ensure clean configs directory
