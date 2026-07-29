@@ -19,7 +19,10 @@ const generateReadme = (servers) => {
         let updateTime = getDate(server.updatedAt || Date.now());
         let fileName = `${server.countryshort}_${String(index).padStart(2, '0')}_${server.ip}.ovpn`;
         let rawUrl = `https://raw.githubusercontent.com/kanpianer/Vpngate-Scraper-API-US.CA.JP/main/configs/${fileName}`;
-        let importUrl = `openvpn://import-profile?url=${encodeURIComponent(rawUrl)}`;
+        // OpenVPN Connect app does not support importing raw .ovpn files via openvpn:// scheme.
+        // Instead, we use GitHub's /raw/ endpoint to force a file download on mobile,
+        // which triggers the OS prompt to "Open in OpenVPN".
+        let importUrl = `https://github.com/kanpianer/Vpngate-Scraper-API-US.CA.JP/raw/main/configs/${fileName}`;
         let downloadLinks = `[Download](./configs/${fileName})&nbsp;[📥](${importUrl})`;
         let hostname = server.hostname ? server.hostname.replace(/ /g, '&nbsp;').replace(/-/g, '&#8209;') : '';
         let updateNoWrap = updateTime.replace(/ /g, '&nbsp;').replace(/-/g, '&#8209;');
