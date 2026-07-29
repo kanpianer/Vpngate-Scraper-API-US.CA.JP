@@ -20,7 +20,9 @@ const generateReadme = (servers) => {
         let fileName = `${server.countryshort}_${String(index).padStart(2, '0')}_${server.ip}.ovpn`;
         let rawUrl = `https://raw.githubusercontent.com/kanpianer/Vpngate-Scraper-API-US.CA.JP/main/configs/${fileName}`;
         let importUrl = `openvpn://import-profile?url=${encodeURIComponent(rawUrl)}`;
-        content += `| [Download](./configs/${fileName}) [📥](${importUrl}) | ${server.countryshort} | ${speedInMbps}&nbsp;Mbps | ${server.hostname} | ${server.ip} | ${server.ping} | ${updateTime.replace(/ /g, '&nbsp;')} |\n`;
+        let downloadLinks = `[Download](./configs/${fileName})&nbsp;[📥](${importUrl})`;
+        let hostname = server.hostname ? server.hostname.replace(/ /g, '&nbsp;').replace(/-/g, '&#8209;') : '';
+        content += `| ${downloadLinks} | ${server.countryshort} | ${speedInMbps}&nbsp;Mbps | ${hostname} | ${server.ip} | ${server.ping} | ${updateTime.replace(/ /g, '&nbsp;')} |\n`;
     });
 
     content += `\n\n### Note: Please respect the terms of use for each VPN.\n\n`;
