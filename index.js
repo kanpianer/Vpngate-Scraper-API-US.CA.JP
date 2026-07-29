@@ -1,4 +1,5 @@
 const fs = require('fs');
+const ping = require('ping');
 const getVpnList = require("./lib/main");
 
 const saveBase64ToFile = (base64Data, filename) => {
@@ -51,14 +52,15 @@ const SERVERS_JSON_PATH = "json/30_servers.json";
 
     getVpnList()
     .then(vpnList => {
-        // Filter API list for JP, US, and CA
-        let apiServers = vpnList.servers.filter(s => s.countryshort === 'JP' || s.countryshort === 'US' || s.countryshort === 'CA');
+        // Filter API list for JP, US, and CA, and speed >= 8 Mbps (speed >= 80000000)
+        let apiServers = vpnList.servers.filter(s => (s.countryshort === 'JP' || s.countryshort === 'US' || s.countryshort === 'CA') && s.speed >= 80000000);
         
         // Read existing servers
         let existingServers = [];
         if (fs.existsSync(SERVERS_JSON_PATH)) {
             try {
                 existingServers = JSON.parse(fs.readFileSync(SERVERS_JSON_PATH, 'utf-8'));
+                existingServers = existingServers.filter(s => s.speed >= 80000000); // Exclude < 8 Mbps
             } catch(e) {
                 console.error("Error reading existing servers json:", e);
                 existingServers = [];
@@ -67,13 +69,20 @@ const SERVERS_JSON_PATH = "json/30_servers.json";
 
         // Identify new servers from API
         let existingIps = new Set(existingServers.map(s => s.ip));
-        let newServers = apiServers.filter(s => !existingIps.has(s.ip));
+        let newServersRaw = apiServers.filter(s => !existingIps.has(s.ip));
 
-        // Update the 30 slots (10 for JP, 20 for US/CA)
-        let existingJP = existingServers.filter(s => s.countryshort === 'JP');
-        let existingOther = existingServers.filter(s => s.countryshort !== 'JP');
-        let newJP = newServers.filter(s => s.countryshort === 'JP');
-        let newOther = newServers.filter(s => s.countryshort !== 'JP');
+        console.log(`Pinging ${newServersRaw.length} new servers...`);
+        
+        return Promise.all(newServersRaw.map(s => ping.promise.probe(s.ip, { timeout: 2 })))
+            .then(pingResults => {
+                let newServers = newServersRaw.filter((s, index) => pingResults[index].alive);
+                console.log(`Ping complete. ${newServers.length} out of ${newServersRaw.length} new servers are alive.`);
+                
+                // Update the 30 slots (10 for JP, 20 for US/CA)
+                let existingJP = existingServers.filter(s => s.countryshort === 'JP');
+                let existingOther = existingServers.filter(s => s.countryshort !== 'JP');
+                let newJP = newServers.filter(s => s.countryshort === 'JP');
+                let newOther = newServers.filter(s => s.countryshort !== 'JP');
 
         const updateList = (existingList, newList, maxCount) => {
             existingList.sort((a, b) => (a.updatedAt || 0) - (b.updatedAt || 0));
@@ -120,6 +129,7 @@ const SERVERS_JSON_PATH = "json/30_servers.json";
 
         // Generate README
         generateReadme(existingServers);
+            });
     })
     .catch(err => {
         console.log(err);
