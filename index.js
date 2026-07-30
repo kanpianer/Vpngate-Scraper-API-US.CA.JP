@@ -78,11 +78,13 @@ const SERVERS_JSON_PATH = "json/30_servers.json";
 
         console.log(`Found ${newServers.length} new servers.`);
                 
-                // Update the 30 slots (10 for JP, 20 for US/CA)
-                let existingJP = existingServers.filter(s => s.countryshort === 'JP');
-                let existingOther = existingServers.filter(s => s.countryshort !== 'JP');
-                let newJP = newServers.filter(s => s.countryshort === 'JP');
-                let newOther = newServers.filter(s => s.countryshort !== 'JP');
+        // Update the 30 slots (10 for JP, 15 for US, 5 for CA)
+        let existingJP = existingServers.filter(s => s.countryshort === 'JP');
+        let existingUS = existingServers.filter(s => s.countryshort === 'US');
+        let existingCA = existingServers.filter(s => s.countryshort === 'CA');
+        let newJP = newServers.filter(s => s.countryshort === 'JP');
+        let newUS = newServers.filter(s => s.countryshort === 'US');
+        let newCA = newServers.filter(s => s.countryshort === 'CA');
 
         const updateList = (existingList, newList, maxCount) => {
             existingList.sort((a, b) => (a.updatedAt || 0) - (b.updatedAt || 0));
@@ -99,9 +101,10 @@ const SERVERS_JSON_PATH = "json/30_servers.json";
         }
 
         existingJP = updateList(existingJP, newJP, 10);
-        existingOther = updateList(existingOther, newOther, 20);
+        existingUS = updateList(existingUS, newUS, 15);
+        existingCA = updateList(existingCA, newCA, 5);
         
-        existingServers = [...existingJP, ...existingOther];
+        existingServers = [...existingJP, ...existingUS, ...existingCA];
 
         // Now sort for display: US first, then CA, then JP. 
         // For servers of the same country, we sort by speed descending.
