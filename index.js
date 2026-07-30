@@ -74,14 +74,9 @@ const SERVERS_JSON_PATH = "json/30_servers.json";
 
         // Identify new servers from API
         let existingIps = new Set(existingServers.map(s => s.ip));
-        let newServersRaw = apiServers.filter(s => !existingIps.has(s.ip));
+        let newServers = apiServers.filter(s => !existingIps.has(s.ip));
 
-        console.log(`Pinging ${newServersRaw.length} new servers...`);
-        
-        return Promise.all(newServersRaw.map(s => ping.promise.probe(s.ip, { timeout: 2 })))
-            .then(pingResults => {
-                let newServers = newServersRaw.filter((s, index) => pingResults[index].alive);
-                console.log(`Ping complete. ${newServers.length} out of ${newServersRaw.length} new servers are alive.`);
+        console.log(`Found ${newServers.length} new servers.`);
                 
                 // Update the 30 slots (10 for JP, 20 for US/CA)
                 let existingJP = existingServers.filter(s => s.countryshort === 'JP');
@@ -134,7 +129,6 @@ const SERVERS_JSON_PATH = "json/30_servers.json";
 
         // Generate README
         generateReadme(existingServers);
-            });
     })
     .catch(err => {
         console.log(err);
