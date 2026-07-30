@@ -14,21 +14,22 @@ This is an auto-generated list of VPNs retrieved from a specific source.
 | [Download](./configs/US_07_70.15.21.128.ovpn) | US | 9.83&nbsp;Mbps | vpn931015921 | 70.15.21.128 | 14 | 07&#8209;31&nbsp;01:17&nbsp;CST |
 | [Download](./configs/US_08_66.235.8.184.ovpn) | US | 8.43&nbsp;Mbps | vpn315868695 | 66.235.8.184 | 87 | 07&#8209;30&nbsp;23:46&nbsp;CST |
 | [Download](./configs/US_09_67.160.42.7.ovpn) | US | 7.94&nbsp;Mbps | vpn495637912 | 67.160.42.7 | 3 | 07&#8209;31&nbsp;04:11&nbsp;CST |
-| [Download](./configs/US_10_104.28.162.111.ovpn) | US | 0.85&nbsp;Mbps | vpn344943213 | 104.28.162.111 | 34 | 07&#8209;30&nbsp;19:55&nbsp;CST |
-| [Download](./configs/CA_11_70.77.250.111.ovpn) | CA | 70.54&nbsp;Mbps | vpn625541155 | 70.77.250.111 | 34 | 07&#8209;31&nbsp;01:17&nbsp;CST |
-| [Download](./configs/CA_12_70.69.200.251.ovpn) | CA | 28.78&nbsp;Mbps | vpn106558468 | 70.69.200.251 | 17 | 07&#8209;30&nbsp;23:46&nbsp;CST |
-| [Download](./configs/CA_13_184.147.62.159.ovpn) | CA | 12.62&nbsp;Mbps | vpn320086889 | 184.147.62.159 | 3 | 07&#8209;30&nbsp;23:46&nbsp;CST |
-| [Download](./configs/CA_14_184.146.227.213.ovpn) | CA | 5.98&nbsp;Mbps | vpn682408352 | 184.146.227.213 | 2 | 07&#8209;30&nbsp;19:31&nbsp;CST |
-| [Download](./configs/JP_15_219.100.37.194.ovpn) | JP | 64.64&nbsp;Mbps | public&#8209;vpn&#8209;196 | 219.100.37.194 | 15 | 07&#8209;31&nbsp;04:11&nbsp;CST |
-| [Download](./configs/JP_16_219.100.37.179.ovpn) | JP | 50.69&nbsp;Mbps | public&#8209;vpn&#8209;187 | 219.100.37.179 | 10 | 07&#8209;31&nbsp;04:11&nbsp;CST |
-| [Download](./configs/JP_17_219.100.37.53.ovpn) | JP | 40.67&nbsp;Mbps | public&#8209;vpn&#8209;78 | 219.100.37.53 | 8 | 07&#8209;31&nbsp;04:11&nbsp;CST |
-| [Download](./configs/JP_18_219.100.37.166.ovpn) | JP | 27.88&nbsp;Mbps | public&#8209;vpn&#8209;208 | 219.100.37.166 | 8 | 07&#8209;31&nbsp;04:11&nbsp;CST |
-| [Download](./configs/JP_19_219.100.37.112.ovpn) | JP | 25.77&nbsp;Mbps | public&#8209;vpn&#8209;159 | 219.100.37.112 | 8 | 07&#8209;31&nbsp;04:11&nbsp;CST |
-| [Download](./configs/JP_20_219.100.37.14.ovpn) | JP | 23.56&nbsp;Mbps | public&#8209;vpn&#8209;50 | 219.100.37.14 | 15 | 07&#8209;31&nbsp;04:11&nbsp;CST |
-| [Download](./configs/JP_21_124.211.70.171.ovpn) | JP | 21.78&nbsp;Mbps | vpn548423948 | 124.211.70.171 | - | 07&#8209;31&nbsp;04:11&nbsp;CST |
-| [Download](./configs/JP_22_219.100.37.25.ovpn) | JP | 17.71&nbsp;Mbps | public&#8209;vpn&#8209;71 | 219.100.37.25 | 13 | 07&#8209;31&nbsp;04:11&nbsp;CST |
-| [Download](./configs/JP_23_219.100.37.52.ovpn) | JP | 17.06&nbsp;Mbps | public&#8209;vpn&#8209;66 | 219.100.37.52 | 25 | 07&#8209;31&nbsp;04:11&nbsp;CST |
-| [Download](./configs/JP_24_219.100.37.63.ovpn) | JP | 15.93&nbsp;Mbps | public&#8209;vpn&#8209;127 | 219.100.37.63 | 20 | 07&#8209;31&nbsp;04:11&nbsp;CST |
+| [Download](./configs/US_10_74.105.237.161.ovpn) | US | 6.97&nbsp;Mbps | vpn684255323 | 74.105.237.161 | 4 | 07&#8209;31&nbsp;05:40&nbsp;CST |
+| [Download](./configs/US_11_104.28.162.111.ovpn) | US | 0.85&nbsp;Mbps | vpn344943213 | 104.28.162.111 | 34 | 07&#8209;30&nbsp;19:55&nbsp;CST |
+| [Download](./configs/CA_12_70.77.250.111.ovpn) | CA | 70.54&nbsp;Mbps | vpn625541155 | 70.77.250.111 | 34 | 07&#8209;31&nbsp;01:17&nbsp;CST |
+| [Download](./configs/CA_13_70.69.200.251.ovpn) | CA | 28.78&nbsp;Mbps | vpn106558468 | 70.69.200.251 | 17 | 07&#8209;30&nbsp;23:46&nbsp;CST |
+| [Download](./configs/CA_14_184.147.62.159.ovpn) | CA | 12.62&nbsp;Mbps | vpn320086889 | 184.147.62.159 | 3 | 07&#8209;30&nbsp;23:46&nbsp;CST |
+| [Download](./configs/CA_15_184.146.227.213.ovpn) | CA | 5.98&nbsp;Mbps | vpn682408352 | 184.146.227.213 | 2 | 07&#8209;30&nbsp;19:31&nbsp;CST |
+| [Download](./configs/JP_16_219.100.37.177.ovpn) | JP | 108.18&nbsp;Mbps | public&#8209;vpn&#8209;182 | 219.100.37.177 | 24 | 07&#8209;31&nbsp;05:40&nbsp;CST |
+| [Download](./configs/JP_17_219.100.37.198.ovpn) | JP | 38.79&nbsp;Mbps | public&#8209;vpn&#8209;210 | 219.100.37.198 | 19 | 07&#8209;31&nbsp;05:40&nbsp;CST |
+| [Download](./configs/JP_18_59.142.10.22.ovpn) | JP | 30.75&nbsp;Mbps | vpn218087963 | 59.142.10.22 | 17 | 07&#8209;31&nbsp;05:40&nbsp;CST |
+| [Download](./configs/JP_19_219.100.37.94.ovpn) | JP | 25.33&nbsp;Mbps | public&#8209;vpn&#8209;146 | 219.100.37.94 | 21 | 07&#8209;31&nbsp;05:40&nbsp;CST |
+| [Download](./configs/JP_20_219.100.37.199.ovpn) | JP | 23.78&nbsp;Mbps | public&#8209;vpn&#8209;223 | 219.100.37.199 | 20 | 07&#8209;31&nbsp;05:40&nbsp;CST |
+| [Download](./configs/JP_21_219.100.37.8.ovpn) | JP | 20.97&nbsp;Mbps | public&#8209;vpn&#8209;44 | 219.100.37.8 | 29 | 07&#8209;31&nbsp;05:40&nbsp;CST |
+| [Download](./configs/JP_22_219.100.37.128.ovpn) | JP | 17.87&nbsp;Mbps | public&#8209;vpn&#8209;164 | 219.100.37.128 | 20 | 07&#8209;31&nbsp;05:40&nbsp;CST |
+| [Download](./configs/JP_23_219.100.37.207.ovpn) | JP | 16.64&nbsp;Mbps | public&#8209;vpn&#8209;253 | 219.100.37.207 | 14 | 07&#8209;31&nbsp;05:40&nbsp;CST |
+| [Download](./configs/JP_24_219.100.37.90.ovpn) | JP | 16.33&nbsp;Mbps | public&#8209;vpn&#8209;130 | 219.100.37.90 | 14 | 07&#8209;31&nbsp;05:40&nbsp;CST |
+| [Download](./configs/JP_25_219.100.37.26.ovpn) | JP | 16.28&nbsp;Mbps | public&#8209;vpn&#8209;74 | 219.100.37.26 | 13 | 07&#8209;31&nbsp;05:40&nbsp;CST |
 
 
 ### Note: Please respect the terms of use for each VPN.
