@@ -15,7 +15,7 @@ const generateReadme = (servers) => {
     content += "| Config | CC | Speed | Hostname | IP&nbsp;Address | Ping | update |\n";
     content += "|-------------|----|-------|----------|------------|-------|--------|\n";
     servers.forEach((server, index) => {
-        let speedInMbps = (server.speed / 10000000).toFixed(2); // Convert to Mbps and round to two decimal places
+        let speedInMbps = (server.speed / 1000000).toFixed(2); // Convert to Mbps and round to two decimal places
         let updateTime = getDate(server.updatedAt || Date.now());
         let fileName = `${server.countryshort}_${String(index).padStart(2, '0')}_${server.ip}.ovpn`;
         let downloadLinks = `[Download](./configs/${fileName})`;
@@ -57,15 +57,15 @@ const SERVERS_JSON_PATH = "json/30_servers.json";
 
     getVpnList()
     .then(vpnList => {
-        // Filter API list for JP, US, and CA, speed >= 8 Mbps (speed >= 8000000), and exclude hostnames starting with public-vpn
-        let apiServers = vpnList.servers.filter(s => (s.countryshort === 'JP' || s.countryshort === 'US' || s.countryshort === 'CA') && s.speed >= 8000000 && !(s.hostname && s.hostname.toLowerCase().startsWith('public-vpn')));
+        // Filter API list for JP, US, and CA, speed >= 10 Mbps (speed >= 10000000), and exclude hostnames starting with public-vpn
+        let apiServers = vpnList.servers.filter(s => (s.countryshort === 'JP' || s.countryshort === 'US' || s.countryshort === 'CA') && s.speed >= 10000000 && !(s.hostname && s.hostname.toLowerCase().startsWith('public-vpn')));
         
         // Read existing servers
         let existingServers = [];
         if (fs.existsSync(SERVERS_JSON_PATH)) {
             try {
                 existingServers = JSON.parse(fs.readFileSync(SERVERS_JSON_PATH, 'utf-8'));
-                existingServers = existingServers.filter(s => s.speed >= 8000000 && !(s.hostname && s.hostname.toLowerCase().startsWith('public-vpn'))); // Exclude < 8 Mbps and public-vpn
+                existingServers = existingServers.filter(s => s.speed >= 10000000 && !(s.hostname && s.hostname.toLowerCase().startsWith('public-vpn'))); // Exclude < 10 Mbps and public-vpn
             } catch(e) {
                 console.error("Error reading existing servers json:", e);
                 existingServers = [];
