@@ -12,16 +12,16 @@ const generateReadme = (servers) => {
     content += `This is an auto-generated list of VPNs retrieved from a specific source.\n\n`;
 
 
-    content += "| Config | CC | Speed | Hostname | IP&nbsp;Address | Ping | update |\n";
-    content += "|-------------|----|-------|----------|------------|-------|--------|\n";
+    content += "| Config | CC | Speed | IP&nbsp;Address | Users | Ping | update |\n";
+    content += "|-------------|----|-------|------------|-------|-------|--------|\n";
     servers.forEach((server, index) => {
         let speedInMbps = (server.speed / 1000000).toFixed(2); // Convert to Mbps and round to two decimal places
         let updateTime = getDate(server.updatedAt || Date.now());
         let fileName = `${server.countryshort}_${String(index).padStart(2, '0')}_${server.ip}.ovpn`;
         let downloadLinks = `[Download](./configs/${fileName})`;
-        let hostname = server.hostname ? server.hostname.replace(/ /g, '&nbsp;').replace(/-/g, '&#8209;') : '';
+        let users = server.totalusers || '0';
         let updateNoWrap = updateTime.replace(/ /g, '&nbsp;').replace(/-/g, '&#8209;');
-        content += `| ${downloadLinks} | ${server.countryshort} | ${speedInMbps}&nbsp;Mbps | ${hostname} | ${server.ip} | ${server.ping} | ${updateNoWrap} |\n`;
+        content += `| ${downloadLinks} | ${server.countryshort} | ${speedInMbps}&nbsp;Mbps | ${server.ip} | ${users} | ${server.ping} | ${updateNoWrap} |\n`;
     });
 
     content += `\n\n### Note: Please respect the terms of use for each VPN.\n\n`;
