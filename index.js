@@ -60,12 +60,30 @@ const SERVERS_JSON_PATH = "json/30_servers.json";
         // Filter API list for JP, US, and CA, speed >= 10 Mbps (speed >= 10000000), and exclude hostnames starting with public-vpn
         let apiServers = vpnList.servers.filter(s => (s.countryshort === 'JP' || s.countryshort === 'US' || s.countryshort === 'CA') && s.speed >= 10000000 && !(s.hostname && s.hostname.toLowerCase().startsWith('public-vpn')));
         
+        // Deduplicate apiServers by IP (keep highest speed)
+        let uniqueApi = new Map();
+        apiServers.forEach(s => {
+            if (!uniqueApi.has(s.ip) || uniqueApi.get(s.ip).speed < s.speed) {
+                uniqueApi.set(s.ip, s);
+            }
+        });
+        apiServers = Array.from(uniqueApi.values());
+
         // Read existing servers
         let existingServers = [];
         if (fs.existsSync(SERVERS_JSON_PATH)) {
             try {
-                existingServers = JSON.parse(fs.readFileSync(SERVERS_JSON_PATH, 'utf-8'));
-                existingServers = existingServers.filter(s => s.speed >= 10000000 && !(s.hostname && s.hostname.toLowerCase().startsWith('public-vpn'))); // Exclude < 10 Mbps and public-vpn
+                let parsed = JSON.parse(fs.readFileSync(SERVERS_JSON_PATH, 'utf-8'));
+                parsed = parsed.filter(s => s.speed >= 10000000 && !(s.hostname && s.hostname.toLowerCase().startsWith('public-vpn'))); // Exclude < 10 Mbps and public-vpn
+                
+                // Deduplicate existingServers by IP
+                let uniqueExisting = new Map();
+                parsed.forEach(s => {
+                    if (!uniqueExisting.has(s.ip) || uniqueExisting.get(s.ip).speed < s.speed) {
+                        uniqueExisting.set(s.ip, s);
+                    }
+                });
+                existingServers = Array.from(uniqueExisting.values());
             } catch(e) {
                 console.error("Error reading existing servers json:", e);
                 existingServers = [];
