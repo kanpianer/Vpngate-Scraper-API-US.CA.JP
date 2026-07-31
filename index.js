@@ -57,15 +57,15 @@ const SERVERS_JSON_PATH = "json/30_servers.json";
 
     getVpnList()
     .then(vpnList => {
-        // Filter API list for JP, US, and CA, and speed >= 8 Mbps (speed >= 8000000)
-        let apiServers = vpnList.servers.filter(s => (s.countryshort === 'JP' || s.countryshort === 'US' || s.countryshort === 'CA') && s.speed >= 8000000);
+        // Filter API list for JP, US, and CA, speed >= 8 Mbps (speed >= 8000000), and exclude hostnames starting with public-vpn
+        let apiServers = vpnList.servers.filter(s => (s.countryshort === 'JP' || s.countryshort === 'US' || s.countryshort === 'CA') && s.speed >= 8000000 && !(s.hostname && s.hostname.toLowerCase().startsWith('public-vpn')));
         
         // Read existing servers
         let existingServers = [];
         if (fs.existsSync(SERVERS_JSON_PATH)) {
             try {
                 existingServers = JSON.parse(fs.readFileSync(SERVERS_JSON_PATH, 'utf-8'));
-                existingServers = existingServers.filter(s => s.speed >= 8000000); // Exclude < 8 Mbps
+                existingServers = existingServers.filter(s => s.speed >= 8000000 && !(s.hostname && s.hostname.toLowerCase().startsWith('public-vpn'))); // Exclude < 8 Mbps and public-vpn
             } catch(e) {
                 console.error("Error reading existing servers json:", e);
                 existingServers = [];
