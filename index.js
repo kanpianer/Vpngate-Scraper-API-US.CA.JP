@@ -57,8 +57,8 @@ const SERVERS_JSON_PATH = "json/30_servers.json";
 
     getVpnList()
     .then(vpnList => {
-        // Filter API list for JP, US, and CA, speed >= 10 Mbps (speed >= 10000000), and exclude hostnames starting with public-vpn
-        let apiServers = vpnList.servers.filter(s => (s.countryshort === 'JP' || s.countryshort === 'US' || s.countryshort === 'CA') && s.speed >= 10000000 && !(s.hostname && s.hostname.toLowerCase().startsWith('public-vpn')));
+        // Filter API list for JP, US, and CA, speed >= 10 Mbps (speed >= 10000000), users <= 5000, and exclude hostnames starting with public-vpn
+        let apiServers = vpnList.servers.filter(s => (s.countryshort === 'JP' || s.countryshort === 'US' || s.countryshort === 'CA') && s.speed >= 10000000 && Number(s.totalusers || 0) <= 5000 && !(s.hostname && s.hostname.toLowerCase().startsWith('public-vpn')));
         
         // Deduplicate apiServers by IP (keep highest speed)
         let uniqueApi = new Map();
@@ -74,7 +74,7 @@ const SERVERS_JSON_PATH = "json/30_servers.json";
         if (fs.existsSync(SERVERS_JSON_PATH)) {
             try {
                 let parsed = JSON.parse(fs.readFileSync(SERVERS_JSON_PATH, 'utf-8'));
-                parsed = parsed.filter(s => s.speed >= 10000000 && !(s.hostname && s.hostname.toLowerCase().startsWith('public-vpn'))); // Exclude < 10 Mbps and public-vpn
+                parsed = parsed.filter(s => s.speed >= 10000000 && Number(s.totalusers || 0) <= 5000 && !(s.hostname && s.hostname.toLowerCase().startsWith('public-vpn'))); // Exclude < 10 Mbps, users > 5000, and public-vpn
                 
                 // Deduplicate existingServers by IP
                 let uniqueExisting = new Map();
