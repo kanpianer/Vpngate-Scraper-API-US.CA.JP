@@ -9,8 +9,8 @@ This is an auto-generated list of VPNs retrieved from a specific source.
 | [Download](./configs/US_02_108.34.212.190.ovpn) | US | 212.69&nbsp;Mbps | 108.34.212.190 | 22 | - | 09&#8209;22&nbsp;08:19&nbsp;CST |
 | [Download](./configs/US_03_24.50.204.195.ovpn) | US | 195.79&nbsp;Mbps | 24.50.204.195 | 2111 | - | 09&#8209;24&nbsp;14:51&nbsp;CST |
 | [Download](./configs/US_04_47.13.60.0.ovpn) | US | 175.81&nbsp;Mbps | 47.13.60.0 | 3088 | 21 | 09&#8209;24&nbsp;09:52&nbsp;CST |
-| [Download](./configs/US_05_70.163.200.54.ovpn) | US | 155.70&nbsp;Mbps | 70.163.200.54 | 3835 | 129 | 09&#8209;20&nbsp;07:43&nbsp;CST |
-| [Download](./configs/US_06_104.28.214.148.ovpn) | US | 144.91&nbsp;Mbps | 104.28.214.148 | 657 | 98 | 09&#8209;22&nbsp;08:19&nbsp;CST |
+| [Download](./configs/US_05_104.28.214.148.ovpn) | US | 144.91&nbsp;Mbps | 104.28.214.148 | 657 | 98 | 09&#8209;22&nbsp;08:19&nbsp;CST |
+| [Download](./configs/US_06_73.177.125.242.ovpn) | US | 108.71&nbsp;Mbps | 73.177.125.242 | 4914 | 25 | 09&#8209;25&nbsp;10:09&nbsp;CST |
 | [Download](./configs/US_07_76.174.228.168.ovpn) | US | 89.96&nbsp;Mbps | 76.174.228.168 | 231 | 15 | 09&#8209;24&nbsp;14:51&nbsp;CST |
 | [Download](./configs/US_08_98.33.95.251.ovpn) | US | 77.93&nbsp;Mbps | 98.33.95.251 | 1274 | 11 | 09&#8209;21&nbsp;09:58&nbsp;CST |
 | [Download](./configs/US_09_73.68.52.248.ovpn) | US | 69.40&nbsp;Mbps | 73.68.52.248 | 1312 | 20 | 09&#8209;21&nbsp;05:58&nbsp;CST |
@@ -24,16 +24,16 @@ This is an auto-generated list of VPNs retrieved from a specific source.
 | [Download](./configs/CA_17_184.144.112.185.ovpn) | CA | 175.59&nbsp;Mbps | 184.144.112.185 | 2788 | 3 | 09&#8209;04&nbsp;14:40&nbsp;CST |
 | [Download](./configs/CA_18_142.188.192.8.ovpn) | CA | 108.76&nbsp;Mbps | 142.188.192.8 | 186 | - | 09&#8209;24&nbsp;06:30&nbsp;CST |
 | [Download](./configs/CA_19_168.222.187.254.ovpn) | CA | 72.43&nbsp;Mbps | 168.222.187.254 | 446 | 1 | 09&#8209;20&nbsp;07:43&nbsp;CST |
-| [Download](./configs/JP_20_150.147.43.142.ovpn) | JP | 949.76&nbsp;Mbps | 150.147.43.142 | 1409 | 3 | 09&#8209;24&nbsp;09:52&nbsp;CST |
-| [Download](./configs/JP_21_217.178.138.146.ovpn) | JP | 672.15&nbsp;Mbps | 217.178.138.146 | 3086 | 7 | 09&#8209;24&nbsp;14:51&nbsp;CST |
+| [Download](./configs/JP_20_217.178.138.146.ovpn) | JP | 672.15&nbsp;Mbps | 217.178.138.146 | 3086 | 7 | 09&#8209;24&nbsp;14:51&nbsp;CST |
+| [Download](./configs/JP_21_60.36.218.124.ovpn) | JP | 536.84&nbsp;Mbps | 60.36.218.124 | 2901 | 8 | 09&#8209;25&nbsp;10:09&nbsp;CST |
 | [Download](./configs/JP_22_42.124.51.130.ovpn) | JP | 293.88&nbsp;Mbps | 42.124.51.130 | 3971 | 21 | 09&#8209;25&nbsp;06:46&nbsp;CST |
 | [Download](./configs/JP_23_133.32.134.187.ovpn) | JP | 276.58&nbsp;Mbps | 133.32.134.187 | 4382 | 3 | 09&#8209;25&nbsp;02:01&nbsp;CST |
 | [Download](./configs/JP_24_101.111.63.129.ovpn) | JP | 191.84&nbsp;Mbps | 101.111.63.129 | 1112 | 9 | 09&#8209;24&nbsp;20:57&nbsp;CST |
 | [Download](./configs/JP_25_119.173.158.65.ovpn) | JP | 116.35&nbsp;Mbps | 119.173.158.65 | 1939 | 15 | 09&#8209;25&nbsp;06:46&nbsp;CST |
 | [Download](./configs/JP_26_150.9.92.202.ovpn) | JP | 84.83&nbsp;Mbps | 150.9.92.202 | 2334 | 3 | 09&#8209;25&nbsp;06:46&nbsp;CST |
-| [Download](./configs/JP_27_113.158.224.228.ovpn) | JP | 81.54&nbsp;Mbps | 113.158.224.228 | 4203 | 13 | 09&#8209;24&nbsp;09:52&nbsp;CST |
-| [Download](./configs/JP_28_106.160.207.113.ovpn) | JP | 57.32&nbsp;Mbps | 106.160.207.113 | 1313 | 4 | 09&#8209;25&nbsp;06:46&nbsp;CST |
-| [Download](./configs/JP_29_115.163.40.198.ovpn) | JP | 32.23&nbsp;Mbps | 115.163.40.198 | 132 | 210 | 09&#8209;24&nbsp;06:30&nbsp;CST |
+| [Download](./configs/JP_27_60.73.127.158.ovpn) | JP | 83.98&nbsp;Mbps | 60.73.127.158 | 1543 | 5 | 09&#8209;25&nbsp;10:09&nbsp;CST |
+| [Download](./configs/JP_28_113.158.224.228.ovpn) | JP | 81.54&nbsp;Mbps | 113.158.224.228 | 4203 | 13 | 09&#8209;24&nbsp;09:52&nbsp;CST |
+| [Download](./configs/JP_29_106.160.207.113.ovpn) | JP | 57.32&nbsp;Mbps | 106.160.207.113 | 1313 | 4 | 09&#8209;25&nbsp;06:46&nbsp;CST |
 
 
 ### Note: Please respect the terms of use for each VPN.
