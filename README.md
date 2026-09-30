@@ -24,13 +24,13 @@ This is an auto-generated list of VPNs retrieved from a specific source.
 | [Download](./configs/CA_17_184.145.140.157.ovpn) | CA | 169.25&nbsp;Mbps | 184.145.140.157 | 1593 | - | 09&#8209;30&nbsp;15:35&nbsp;CST |
 | [Download](./configs/CA_18_142.188.192.8.ovpn) | CA | 108.76&nbsp;Mbps | 142.188.192.8 | 186 | - | 09&#8209;24&nbsp;06:30&nbsp;CST |
 | [Download](./configs/CA_19_168.222.187.254.ovpn) | CA | 72.43&nbsp;Mbps | 168.222.187.254 | 446 | 1 | 09&#8209;20&nbsp;07:43&nbsp;CST |
-| [Download](./configs/JP_20_115.36.211.48.ovpn) | JP | 962.07&nbsp;Mbps | 115.36.211.48 | 702 | 8 | 09&#8209;30&nbsp;15:35&nbsp;CST |
+| [Download](./configs/JP_20_180.197.225.192.ovpn) | JP | 885.48&nbsp;Mbps | 180.197.225.192 | 246 | 10 | 10&#8209;01&nbsp;04:22&nbsp;CST |
 | [Download](./configs/JP_21_117.108.58.246.ovpn) | JP | 829.92&nbsp;Mbps | 117.108.58.246 | 1480 | 2 | 09&#8209;30&nbsp;15:35&nbsp;CST |
 | [Download](./configs/JP_22_153.232.135.233.ovpn) | JP | 573.55&nbsp;Mbps | 153.232.135.233 | 4723 | 4 | 09&#8209;30&nbsp;15:35&nbsp;CST |
 | [Download](./configs/JP_23_126.88.211.239.ovpn) | JP | 428.52&nbsp;Mbps | 126.88.211.239 | 434 | 6 | 09&#8209;30&nbsp;22:19&nbsp;CST |
 | [Download](./configs/JP_24_126.119.167.221.ovpn) | JP | 262.69&nbsp;Mbps | 126.119.167.221 | 509 | 3 | 09&#8209;30&nbsp;15:35&nbsp;CST |
 | [Download](./configs/JP_25_126.218.107.254.ovpn) | JP | 213.91&nbsp;Mbps | 126.218.107.254 | 1664 | 4 | 09&#8209;30&nbsp;22:19&nbsp;CST |
-| [Download](./configs/JP_26_126.117.194.37.ovpn) | JP | 91.31&nbsp;Mbps | 126.117.194.37 | 4565 | 4 | 09&#8209;30&nbsp;08:49&nbsp;CST |
+| [Download](./configs/JP_26_60.106.128.206.ovpn) | JP | 202.16&nbsp;Mbps | 60.106.128.206 | 2168 | 8 | 10&#8209;01&nbsp;04:22&nbsp;CST |
 | [Download](./configs/JP_27_175.177.6.39.ovpn) | JP | 87.80&nbsp;Mbps | 175.177.6.39 | 4817 | 15 | 09&#8209;30&nbsp;22:19&nbsp;CST |
 | [Download](./configs/JP_28_27.91.152.11.ovpn) | JP | 81.54&nbsp;Mbps | 27.91.152.11 | 1327 | 6 | 09&#8209;30&nbsp;22:19&nbsp;CST |
 | [Download](./configs/JP_29_110.173.243.2.ovpn) | JP | 73.60&nbsp;Mbps | 110.173.243.2 | 6 | - | 09&#8209;30&nbsp;22:19&nbsp;CST |
