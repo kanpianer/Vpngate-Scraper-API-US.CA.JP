@@ -24,16 +24,16 @@ This is an auto-generated list of VPNs retrieved from a specific source.
 | [Download](./configs/CA_17_184.145.140.157.ovpn) | CA | 169.25&nbsp;Mbps | 184.145.140.157 | 1593 | - | 09&#8209;30&nbsp;15:35&nbsp;CST |
 | [Download](./configs/CA_18_142.188.192.8.ovpn) | CA | 108.76&nbsp;Mbps | 142.188.192.8 | 186 | - | 09&#8209;24&nbsp;06:30&nbsp;CST |
 | [Download](./configs/CA_19_168.222.187.254.ovpn) | CA | 72.43&nbsp;Mbps | 168.222.187.254 | 446 | 1 | 09&#8209;20&nbsp;07:43&nbsp;CST |
-| [Download](./configs/JP_20_180.197.225.192.ovpn) | JP | 885.48&nbsp;Mbps | 180.197.225.192 | 246 | 10 | 10&#8209;01&nbsp;04:22&nbsp;CST |
-| [Download](./configs/JP_21_219.102.11.96.ovpn) | JP | 734.27&nbsp;Mbps | 219.102.11.96 | 2904 | 5 | 10&#8209;01&nbsp;15:54&nbsp;CST |
-| [Download](./configs/JP_22_175.128.162.179.ovpn) | JP | 528.76&nbsp;Mbps | 175.128.162.179 | 357 | 17 | 10&#8209;01&nbsp;15:54&nbsp;CST |
+| [Download](./configs/JP_20_219.102.11.96.ovpn) | JP | 734.27&nbsp;Mbps | 219.102.11.96 | 2904 | 5 | 10&#8209;01&nbsp;15:54&nbsp;CST |
+| [Download](./configs/JP_21_175.128.162.179.ovpn) | JP | 528.76&nbsp;Mbps | 175.128.162.179 | 357 | 17 | 10&#8209;01&nbsp;15:54&nbsp;CST |
+| [Download](./configs/JP_22_218.228.84.97.ovpn) | JP | 472.29&nbsp;Mbps | 218.228.84.97 | 786 | 7 | 10&#8209;01&nbsp;22:52&nbsp;CST |
 | [Download](./configs/JP_23_49.236.224.90.ovpn) | JP | 378.16&nbsp;Mbps | 49.236.224.90 | 0 | 3 | 10&#8209;01&nbsp;08:52&nbsp;CST |
-| [Download](./configs/JP_24_60.106.128.206.ovpn) | JP | 202.16&nbsp;Mbps | 60.106.128.206 | 2168 | 8 | 10&#8209;01&nbsp;04:22&nbsp;CST |
-| [Download](./configs/JP_25_182.20.76.133.ovpn) | JP | 93.57&nbsp;Mbps | 182.20.76.133 | 2817 | 6 | 10&#8209;01&nbsp;08:52&nbsp;CST |
-| [Download](./configs/JP_26_124.215.164.19.ovpn) | JP | 92.22&nbsp;Mbps | 124.215.164.19 | 1155 | 13 | 10&#8209;01&nbsp;08:52&nbsp;CST |
-| [Download](./configs/JP_27_210.150.77.121.ovpn) | JP | 89.53&nbsp;Mbps | 210.150.77.121 | 313 | 46 | 10&#8209;01&nbsp;08:52&nbsp;CST |
-| [Download](./configs/JP_28_27.91.152.11.ovpn) | JP | 81.54&nbsp;Mbps | 27.91.152.11 | 1327 | 6 | 09&#8209;30&nbsp;22:19&nbsp;CST |
-| [Download](./configs/JP_29_110.173.243.2.ovpn) | JP | 73.60&nbsp;Mbps | 110.173.243.2 | 6 | - | 09&#8209;30&nbsp;22:19&nbsp;CST |
+| [Download](./configs/JP_24_27.83.64.102.ovpn) | JP | 296.22&nbsp;Mbps | 27.83.64.102 | 2132 | 3 | 10&#8209;01&nbsp;22:52&nbsp;CST |
+| [Download](./configs/JP_25_60.106.128.206.ovpn) | JP | 202.16&nbsp;Mbps | 60.106.128.206 | 2168 | 8 | 10&#8209;01&nbsp;04:22&nbsp;CST |
+| [Download](./configs/JP_26_182.20.76.133.ovpn) | JP | 93.57&nbsp;Mbps | 182.20.76.133 | 2817 | 6 | 10&#8209;01&nbsp;08:52&nbsp;CST |
+| [Download](./configs/JP_27_124.215.164.19.ovpn) | JP | 92.22&nbsp;Mbps | 124.215.164.19 | 1155 | 13 | 10&#8209;01&nbsp;08:52&nbsp;CST |
+| [Download](./configs/JP_28_210.150.77.121.ovpn) | JP | 89.53&nbsp;Mbps | 210.150.77.121 | 313 | 46 | 10&#8209;01&nbsp;08:52&nbsp;CST |
+| [Download](./configs/JP_29_222.229.242.139.ovpn) | JP | 73.03&nbsp;Mbps | 222.229.242.139 | 1124 | 24 | 10&#8209;01&nbsp;22:52&nbsp;CST |
 
 
 ### Note: Please respect the terms of use for each VPN.
