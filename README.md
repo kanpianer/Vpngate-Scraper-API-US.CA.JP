@@ -15,8 +15,8 @@ This is an auto-generated list of VPNs retrieved from a specific source.
 | [Download](./configs/US_08_173.94.215.156.ovpn) | US | 94.46&nbsp;Mbps | 173.94.215.156 | 36 | - | 10&#8209;30&nbsp;04:42&nbsp;CST |
 | [Download](./configs/US_09_104.28.246.147.ovpn) | US | 76.63&nbsp;Mbps | 104.28.246.147 | 87 | 11 | 10&#8209;21&nbsp;22:43&nbsp;CST |
 | [Download](./configs/US_10_104.28.245.232.ovpn) | US | 51.53&nbsp;Mbps | 104.28.245.232 | 0 | 110 | 10&#8209;23&nbsp;03:35&nbsp;CST |
-| [Download](./configs/US_11_104.28.232.199.ovpn) | US | 43.42&nbsp;Mbps | 104.28.232.199 | 195 | 33 | 10&#8209;19&nbsp;00:58&nbsp;CST |
-| [Download](./configs/US_12_43.247.133.122.ovpn) | US | 40.68&nbsp;Mbps | 43.247.133.122 | 3560 | 2 | 10&#8209;27&nbsp;00:20&nbsp;CST |
+| [Download](./configs/US_11_43.247.133.122.ovpn) | US | 40.68&nbsp;Mbps | 43.247.133.122 | 3560 | 2 | 10&#8209;27&nbsp;00:20&nbsp;CST |
+| [Download](./configs/US_12_50.81.230.5.ovpn) | US | 40.12&nbsp;Mbps | 50.81.230.5 | 594 | - | 10&#8209;30&nbsp;15:49&nbsp;CST |
 | [Download](./configs/US_13_73.145.246.113.ovpn) | US | 36.90&nbsp;Mbps | 73.145.246.113 | 418 | 32 | 10&#8209;19&nbsp;05:58&nbsp;CST |
 | [Download](./configs/US_14_104.28.251.153.ovpn) | US | 24.81&nbsp;Mbps | 104.28.251.153 | 4776 | 30 | 10&#8209;25&nbsp;20:48&nbsp;CST |
 | [Download](./configs/CA_15_24.203.203.44.ovpn) | CA | 326.72&nbsp;Mbps | 24.203.203.44 | 870 | 10 | 10&#8209;10&nbsp;09:23&nbsp;CST |
