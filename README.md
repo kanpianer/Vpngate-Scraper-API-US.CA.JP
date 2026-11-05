@@ -13,11 +13,11 @@ This is an auto-generated list of VPNs retrieved from a specific source.
 | [Download](./configs/US_06_104.28.198.247.ovpn) | US | 73.37&nbsp;Mbps | 104.28.198.247 | 4614 | 52 | 11&#8209;01&nbsp;02:05&nbsp;CST |
 | [Download](./configs/US_07_104.28.228.108.ovpn) | US | 65.51&nbsp;Mbps | 104.28.228.108 | 16 | 43 | 10&#8209;31&nbsp;21:57&nbsp;CST |
 | [Download](./configs/US_08_104.28.232.202.ovpn) | US | 64.67&nbsp;Mbps | 104.28.232.202 | 615 | 34 | 11&#8209;03&nbsp;09:53&nbsp;CST |
-| [Download](./configs/US_09_104.28.245.232.ovpn) | US | 51.53&nbsp;Mbps | 104.28.245.232 | 0 | 110 | 10&#8209;23&nbsp;03:35&nbsp;CST |
-| [Download](./configs/US_10_71.186.188.26.ovpn) | US | 47.59&nbsp;Mbps | 71.186.188.26 | 61 | 14 | 11&#8209;03&nbsp;03:51&nbsp;CST |
-| [Download](./configs/US_11_43.247.133.122.ovpn) | US | 40.68&nbsp;Mbps | 43.247.133.122 | 3560 | 2 | 10&#8209;27&nbsp;00:20&nbsp;CST |
-| [Download](./configs/US_12_50.81.230.5.ovpn) | US | 40.12&nbsp;Mbps | 50.81.230.5 | 594 | - | 10&#8209;30&nbsp;15:49&nbsp;CST |
-| [Download](./configs/US_13_104.28.251.153.ovpn) | US | 24.81&nbsp;Mbps | 104.28.251.153 | 4776 | 30 | 10&#8209;25&nbsp;20:48&nbsp;CST |
+| [Download](./configs/US_09_71.186.188.26.ovpn) | US | 47.59&nbsp;Mbps | 71.186.188.26 | 61 | 14 | 11&#8209;03&nbsp;03:51&nbsp;CST |
+| [Download](./configs/US_10_43.247.133.122.ovpn) | US | 40.68&nbsp;Mbps | 43.247.133.122 | 3560 | 2 | 10&#8209;27&nbsp;00:20&nbsp;CST |
+| [Download](./configs/US_11_50.81.230.5.ovpn) | US | 40.12&nbsp;Mbps | 50.81.230.5 | 594 | - | 10&#8209;30&nbsp;15:49&nbsp;CST |
+| [Download](./configs/US_12_104.28.251.153.ovpn) | US | 24.81&nbsp;Mbps | 104.28.251.153 | 4776 | 30 | 10&#8209;25&nbsp;20:48&nbsp;CST |
+| [Download](./configs/US_13_162.35.168.138.ovpn) | US | 24.39&nbsp;Mbps | 162.35.168.138 | 0 | 18 | 11&#8209;05&nbsp;08:34&nbsp;CST |
 | [Download](./configs/US_14_71.208.73.227.ovpn) | US | 23.05&nbsp;Mbps | 71.208.73.227 | 1043 | 11 | 11&#8209;02&nbsp;16:30&nbsp;CST |
 | [Download](./configs/CA_15_24.203.203.44.ovpn) | CA | 326.72&nbsp;Mbps | 24.203.203.44 | 870 | 10 | 10&#8209;10&nbsp;09:23&nbsp;CST |
 | [Download](./configs/CA_16_154.27.39.156.ovpn) | CA | 254.49&nbsp;Mbps | 154.27.39.156 | 2065 | 16 | 10&#8209;12&nbsp;08:47&nbsp;CST |
