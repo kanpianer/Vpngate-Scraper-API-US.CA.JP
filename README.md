@@ -25,15 +25,15 @@ This is an auto-generated list of VPNs retrieved from a specific source.
 | [Download](./configs/CA_18_79.182.16.54.ovpn) | CA | 65.51&nbsp;Mbps | 79.182.16.54 | 1680 | 1 | 11&#8209;09&nbsp;05:25&nbsp;CST |
 | [Download](./configs/CA_19_75.158.255.70.ovpn) | CA | 65.12&nbsp;Mbps | 75.158.255.70 | 2344 | 8 | 11&#8209;08&nbsp;08:56&nbsp;CST |
 | [Download](./configs/JP_20_211.15.4.130.ovpn) | JP | 972.21&nbsp;Mbps | 211.15.4.130 | 1852 | 10 | 11&#8209;10&nbsp;11:51&nbsp;CST |
-| [Download](./configs/JP_21_218.112.80.95.ovpn) | JP | 943.32&nbsp;Mbps | 218.112.80.95 | 1866 | 5 | 11&#8209;10&nbsp;04:14&nbsp;CST |
-| [Download](./configs/JP_22_113.145.220.179.ovpn) | JP | 869.02&nbsp;Mbps | 113.145.220.179 | 3175 | 27 | 11&#8209;10&nbsp;11:51&nbsp;CST |
+| [Download](./configs/JP_21_113.145.220.179.ovpn) | JP | 869.02&nbsp;Mbps | 113.145.220.179 | 3175 | 27 | 11&#8209;10&nbsp;11:51&nbsp;CST |
+| [Download](./configs/JP_22_113.153.21.92.ovpn) | JP | 356.85&nbsp;Mbps | 113.153.21.92 | 1028 | 4 | 11&#8209;11&nbsp;02:58&nbsp;CST |
 | [Download](./configs/JP_23_126.38.129.219.ovpn) | JP | 332.23&nbsp;Mbps | 126.38.129.219 | 4687 | 12 | 11&#8209;10&nbsp;11:51&nbsp;CST |
 | [Download](./configs/JP_24_183.77.114.137.ovpn) | JP | 237.59&nbsp;Mbps | 183.77.114.137 | 4970 | 15 | 11&#8209;10&nbsp;11:51&nbsp;CST |
 | [Download](./configs/JP_25_126.41.247.217.ovpn) | JP | 199.15&nbsp;Mbps | 126.41.247.217 | 2320 | 5 | 11&#8209;10&nbsp;19:54&nbsp;CST |
 | [Download](./configs/JP_26_59.158.19.93.ovpn) | JP | 154.45&nbsp;Mbps | 59.158.19.93 | 142 | 19 | 11&#8209;10&nbsp;19:54&nbsp;CST |
 | [Download](./configs/JP_27_113.35.101.62.ovpn) | JP | 143.35&nbsp;Mbps | 113.35.101.62 | 1829 | 2 | 11&#8209;10&nbsp;11:51&nbsp;CST |
 | [Download](./configs/JP_28_49.242.156.44.ovpn) | JP | 98.14&nbsp;Mbps | 49.242.156.44 | 3020 | 17 | 11&#8209;10&nbsp;11:51&nbsp;CST |
-| [Download](./configs/JP_29_222.9.20.128.ovpn) | JP | 77.44&nbsp;Mbps | 222.9.20.128 | 539 | 9 | 11&#8209;10&nbsp;04:14&nbsp;CST |
+| [Download](./configs/JP_29_220.218.41.108.ovpn) | JP | 53.61&nbsp;Mbps | 220.218.41.108 | 865 | 8 | 11&#8209;11&nbsp;02:58&nbsp;CST |
 
 
 ### Note: Please respect the terms of use for each VPN.
