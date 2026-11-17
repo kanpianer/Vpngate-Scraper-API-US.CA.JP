@@ -28,12 +28,12 @@ This is an auto-generated list of VPNs retrieved from a specific source.
 | [Download](./configs/JP_21_221.34.8.163.ovpn) | JP | 970.02&nbsp;Mbps | 221.34.8.163 | 1982 | 4 | 11&#8209;16&nbsp;11:27&nbsp;CST |
 | [Download](./configs/JP_22_61.23.212.65.ovpn) | JP | 640.44&nbsp;Mbps | 61.23.212.65 | 849 | 18 | 11&#8209;17&nbsp;07:04&nbsp;CST |
 | [Download](./configs/JP_23_124.45.99.172.ovpn) | JP | 409.73&nbsp;Mbps | 124.45.99.172 | 332 | 14 | 11&#8209;17&nbsp;13:27&nbsp;CST |
-| [Download](./configs/JP_24_113.213.196.228.ovpn) | JP | 183.15&nbsp;Mbps | 113.213.196.228 | 42 | 13 | 11&#8209;16&nbsp;00:40&nbsp;CST |
-| [Download](./configs/JP_25_60.106.128.206.ovpn) | JP | 163.39&nbsp;Mbps | 60.106.128.206 | 3018 | 8 | 11&#8209;16&nbsp;00:40&nbsp;CST |
-| [Download](./configs/JP_26_133.201.216.128.ovpn) | JP | 138.13&nbsp;Mbps | 133.201.216.128 | 234 | 6 | 11&#8209;17&nbsp;07:04&nbsp;CST |
-| [Download](./configs/JP_27_121.102.147.208.ovpn) | JP | 132.70&nbsp;Mbps | 121.102.147.208 | 2668 | 25 | 11&#8209;17&nbsp;13:27&nbsp;CST |
-| [Download](./configs/JP_28_126.119.24.250.ovpn) | JP | 97.00&nbsp;Mbps | 126.119.24.250 | 2703 | 10 | 11&#8209;16&nbsp;00:40&nbsp;CST |
-| [Download](./configs/JP_29_202.247.143.235.ovpn) | JP | 70.14&nbsp;Mbps | 202.247.143.235 | 1721 | 16 | 11&#8209;16&nbsp;20:09&nbsp;CST |
+| [Download](./configs/JP_24_60.106.128.206.ovpn) | JP | 163.39&nbsp;Mbps | 60.106.128.206 | 3018 | 8 | 11&#8209;16&nbsp;00:40&nbsp;CST |
+| [Download](./configs/JP_25_133.201.216.128.ovpn) | JP | 138.13&nbsp;Mbps | 133.201.216.128 | 234 | 6 | 11&#8209;17&nbsp;07:04&nbsp;CST |
+| [Download](./configs/JP_26_121.102.147.208.ovpn) | JP | 132.70&nbsp;Mbps | 121.102.147.208 | 2668 | 25 | 11&#8209;17&nbsp;13:27&nbsp;CST |
+| [Download](./configs/JP_27_126.119.24.250.ovpn) | JP | 97.00&nbsp;Mbps | 126.119.24.250 | 2703 | 10 | 11&#8209;16&nbsp;00:40&nbsp;CST |
+| [Download](./configs/JP_28_202.247.143.235.ovpn) | JP | 70.14&nbsp;Mbps | 202.247.143.235 | 1721 | 16 | 11&#8209;16&nbsp;20:09&nbsp;CST |
+| [Download](./configs/JP_29_116.12.3.20.ovpn) | JP | 20.20&nbsp;Mbps | 116.12.3.20 | 4765 | 10 | 11&#8209;17&nbsp;23:00&nbsp;CST |
 
 
 ### Note: Please respect the terms of use for each VPN.
